@@ -1,5 +1,7 @@
 <template>
   <div class="app-container">
+    <el-button  class="click-button" @click="listLoading=false"></el-button>
+    <span class="click-span" @click="listLoading=false"></span>
     <el-table
       v-loading="listLoading"
       :data="list"
